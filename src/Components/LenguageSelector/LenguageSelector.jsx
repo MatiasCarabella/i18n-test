@@ -12,7 +12,7 @@ const LenguageSelector = () => {
     <p className="mt-3 flex gap-3 text-center text-[#8d96a7]">
       <button type="button" onClick={() => changeLanguage("en")}>
         <img
-          src="https://wprock.fr/ezoimgfmt/assets.wprock.fr/emoji/joypixels/512/1f1fa-1f1f2.png?ezimgfmt=ng%3Awebp%2Fngcb25%2Frs%3Adevice%2Frscb25-1"
+          src="https://wprock.fr/ezoimgfmt/assets.wprock.fr/emoji/joypixels/512/1f1fa-1f1f2.png"
           className="h-10"
           alt="EN"
         />
@@ -26,6 +26,15 @@ const LenguageSelector = () => {
           alt="ES"
         />
         Es
+      </button>
+      {" | "}
+      <button type="button" onClick={() => changeLanguage("fr")}>
+        <img
+          src="https://wprock.fr/ezoimgfmt/assets.wprock.fr/emoji/joypixels/512/1f1eb-1f1f7.png"
+          className=" h-10 "
+          alt="FR"
+        />
+        Fr
       </button>
     </p>
   );
